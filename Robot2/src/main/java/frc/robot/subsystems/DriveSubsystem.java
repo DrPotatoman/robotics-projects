@@ -15,8 +15,9 @@ public class DriveSubsystem extends SubsystemBase {
   private final WPI_TalonSRX rightMotor1 = new WPI_TalonSRX(1);
   private final WPI_TalonSRX rightMotor2 = new WPI_TalonSRX(2);
   public DriveSubsystem() {
-    leftMotor1.setInverted(true);
-    leftMotor2.setInverted(true);
+    rightMotor1.setInverted(true);
+    rightMotor2.setInverted(true);
+    
   }
   public void tankDrive(double left, double right){
     leftMotor1.set(left);

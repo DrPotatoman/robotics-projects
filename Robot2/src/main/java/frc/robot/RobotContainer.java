@@ -32,7 +32,7 @@ public class RobotContainer {
     // Configure the trigger bindings
     configureBindings();
     m_exampleSubsystem.setDefaultCommand(new RunCommand(() -> 
-    m_exampleSubsystem.arcadeDrive(m_driverController.getRawAxis(0), m_driverController.getRawAxis(1)), m_exampleSubsystem));
+    m_exampleSubsystem.arcadeDrive(-m_driverController.getRawAxis(1), m_driverController.getRawAxis(0)), m_exampleSubsystem));
   }
 
   /**
