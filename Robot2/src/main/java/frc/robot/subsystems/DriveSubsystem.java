@@ -33,7 +33,7 @@ public class DriveSubsystem extends SubsystemBase {
   public void arcadeDrive(double y, double x){
     double left = y + x;
     double right = y - x;
-     leftMotor1.set(left);
+    leftMotor1.set(left);
     leftMotor2.set(left);
     rightMotor1.set(right);
     rightMotor2.set(right);
