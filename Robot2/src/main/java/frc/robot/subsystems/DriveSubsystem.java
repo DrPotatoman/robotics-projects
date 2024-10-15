@@ -55,8 +55,12 @@ public class DriveSubsystem extends SubsystemBase {
   }
   public double getAngle(){
     return navX.getAngle();
-    
+
   }
+  public void resetNavx(){
+    navX.reset();
+  }
+  
   /**
    * An example method querying a boolean state of the subsystem (for example, a digital sensor).
    *
