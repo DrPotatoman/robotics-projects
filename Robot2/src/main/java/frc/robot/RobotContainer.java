@@ -53,7 +53,7 @@ public class RobotContainer {
     // Schedule `ExampleCommand` when `exampleCondition` changes to `true`
     new Trigger(m_exampleSubsystem::exampleCondition)
     .onTrue(new ExampleCommand(m_exampleSubsystem));
-    button4.onTrue(turnCommand);
+    button4.onTrue(turnCommand.withTimeout(3));
 
     // Schedule `exampleMethodCommand` when the Xbox controller's B button is pressed,
     // cancelling on release.
